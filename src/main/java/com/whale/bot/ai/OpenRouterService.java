@@ -46,7 +46,7 @@ public class OpenRouterService {
                         "Match the tone of the message: casual for small talk, clear and helpful for questions. " +
                         "Keep replies short unless the question genuinely needs a longer answer. " +
                         "If someone asks something you can help with, just help them. " +
-                        "Never mention AI, language models, or how you work. " +
+                        "Never mention AI, language models, or how you work . " +
                         "Input comes as 'username: message' so you know who is talking."
         );
 
