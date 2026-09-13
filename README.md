@@ -1,10 +1,10 @@
-# Bob Bot
+# Minecraft Society Bot
 
-Bob Bot is a Java Discord bot that replies in a dedicated study channel or when mentioned. It uses OpenRouter for chat responses and can load local text files as a small knowledge base.
+Minecraft Society Bot (Bob) is a Java Discord bot that replies in a dedicated study channel or when mentioned. It uses OpenRouter for chat responses and can load local text files as a small knowledge base.
 
 ## Team project
 
-I built Bob Bot as my contribution to a university group project, where a team of students combined their own bot features into one shared Discord bot for a Minecraft society server. This repository is my standalone version of the AI chat module: the OpenRouter integration, knowledge base loading and conversation memory. The combined team bot lives at [Discord-Bot-Group-Project](https://github.com/impossibleiman/Discord-Bot-Group-Project), where this module was merged in as its AI chat feature.
+I built this bot as my contribution to a university group project, where a team of students combined their own bot features into one shared Discord bot for a Minecraft society server. This repository is my standalone version of the AI chat module: the OpenRouter integration, knowledge base loading and conversation memory. The combined team bot lives at [Discord-Bot-Group-Project](https://github.com/impossibleiman/Discord-Bot-Group-Project), where this module was merged in as its AI chat feature.
 
 ## What it does
 
@@ -45,7 +45,7 @@ mvn exec:java -Dexec.mainClass="com.whale.bot.Main"
 
 ## Knowledge files
 
-Create a `knowledge` folder in the working directory and add `.txt` files. Bob will combine those files and include them as reference material for replies.
+Create a `knowledge` folder in the working directory and add `.txt` files. The bot will combine those files and include them as reference material for replies.
 
 ## Notes
 
