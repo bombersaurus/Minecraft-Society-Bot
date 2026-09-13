@@ -1,10 +1,10 @@
 # Minecraft Society Bot
 
-Minecraft Society Bot (Bob) is a Java Discord bot that replies in a dedicated study channel or when mentioned. It uses OpenRouter for chat responses and can load local text files as a small knowledge base.
+A Discord bot written in Java that chats with members of a Minecraft society server. It answers in the `ai-chat` channel or when someone mentions it, using OpenRouter for replies and a folder of text files for server specific info.
 
 ## Team project
 
-I built this bot as my contribution to a university group project, where a team of students combined their own bot features into one shared Discord bot for a Minecraft society server. This repository is my standalone version of the AI chat module: the OpenRouter integration, knowledge base loading and conversation memory. The combined team bot lives at [Discord-Bot-Group-Project](https://github.com/impossibleiman/Discord-Bot-Group-Project), where this module was merged in as its AI chat feature.
+This was my part of a university group project. Each of us built bot features on our own, then we merged them into one bot for the society's server. I built the AI chat: the OpenRouter calls, the knowledge base and the chat memory. The merged team bot is here: [Discord-Bot-Group-Project](https://github.com/impossibleiman/Discord-Bot-Group-Project).
 
 ## What it does
 
@@ -17,7 +17,7 @@ I built this bot as my contribution to a university group project, where a team 
 
 ## Why I built it
 
-The goal was to make a practical Discord helper that could answer questions in a casual server without needing a large framework. The code is small enough to understand, but still covers real bot concerns like message intents, API calls, memory, and secret handling.
+I wanted members to be able to ask the bot questions about the server and get a proper answer, not just a fixed command reply. Getting it to remember the last few messages was the hardest part, because without that every reply ignored the conversation.
 
 ## Tech
 
@@ -49,4 +49,4 @@ Create a `knowledge` folder in the working directory and add `.txt` files. The b
 
 ## Notes
 
-This repo does not include tokens or private study files. Keep production secrets in environment variables or your deployment platform's secret manager.
+No tokens are committed. The bot reads `DISCORD_TOKEN` and `OPENROUTER_API_KEY` from environment variables.
