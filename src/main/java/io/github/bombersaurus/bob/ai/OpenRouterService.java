@@ -1,4 +1,4 @@
-package com.whale.bot.ai;
+package io.github.bombersaurus.bob.ai;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -41,7 +41,7 @@ public class OpenRouterService {
         StringBuilder prompt = new StringBuilder();
 
         prompt.append(
-                "You are Bob, a helpful assistant in a university Discord server. " +
+                "You are Bob, a helpful assistant in a Discord server for a group of friends who play games together. " +
                         "Reply in plain text only no asterisks, no italics, no emotes, no roleplay. " +
                         "Match the tone of the message: casual for small talk, clear and helpful for questions. " +
                         "Keep replies short unless the question genuinely needs a longer answer. " +
@@ -51,7 +51,7 @@ public class OpenRouterService {
         );
 
         if (knowledgeBase.hasContent()) {
-            prompt.append("\n\nStudy material for reference:\n\n");
+            prompt.append("\n\nReference info about the server and the group:\n\n");
             prompt.append(knowledgeBase.getContent());
         }
 

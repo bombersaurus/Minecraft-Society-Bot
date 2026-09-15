@@ -1,4 +1,4 @@
-package com.whale.bot.ai;
+package io.github.bombersaurus.bob.ai;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 // loads text files from the knowledge folder and combines them into a single string
-// this gets injected into the system prompt so the ai has context about the module
+// this gets injected into the system prompt so the ai has context about the server and the group
 public class KnowledgeBase {
 
     private static final String KNOWLEDGE_DIR = "knowledge";

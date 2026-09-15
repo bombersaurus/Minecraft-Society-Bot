@@ -1,6 +1,6 @@
-package com.whale.bot;
+package io.github.bombersaurus.bob;
 
-import com.whale.bot.ai.AIChatListener;
+import io.github.bombersaurus.bob.ai.AIChatListener;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 

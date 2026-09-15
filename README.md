@@ -1,10 +1,8 @@
-# Minecraft Society Bot
+# Bob
 
-A Discord bot written in Java that chats with members of a Minecraft society server. It answers in the `ai-chat` channel or when someone mentions it, using OpenRouter for replies and a folder of text files for server specific info.
+A Discord bot written in Java for my friends' server. Bob chats in the `ai-chat` channel or when someone mentions him, using OpenRouter for replies and a folder of text files for context about the server and the group.
 
-## Team project
-
-This was my part of a university group project. Each of us built bot features on our own, then we merged them into one bot for the society's server. I built the AI chat: the OpenRouter calls, the knowledge base and the chat memory. The merged team bot is here: [Discord-Bot-Group-Project](https://github.com/impossibleiman/Discord-Bot-Group-Project).
+It started as my part of a university group project, and I now develop it on my own.
 
 ## What it does
 
@@ -17,7 +15,13 @@ This was my part of a university group project. Each of us built bot features on
 
 ## Why I built it
 
-I wanted members to be able to ask the bot questions about the server and get a proper answer, not just a fixed command reply. Getting it to remember the last few messages was the hardest part, because without that every reply ignored the conversation.
+I wanted a bot my friends could actually talk to, not one that only replies to fixed commands. Getting it to remember the last few messages was the hardest part, because without that every reply ignored the conversation.
+
+## Planned
+
+- Make conversation memory safe when several people message at once
+- Per-user cooldowns, tests and CI
+- Gaming features for the group, such as Valorant stats lookups
 
 ## Tech
 
@@ -40,7 +44,7 @@ Then build and run with Maven:
 
 ```bash
 mvn package
-mvn exec:java -Dexec.mainClass="com.whale.bot.Main"
+mvn exec:java -Dexec.mainClass="io.github.bombersaurus.bob.Main"
 ```
 
 ## Knowledge files
